@@ -1,0 +1,5 @@
+INSERT INTO novelist VALUES (NULL, '小説家、英文学者','夏目漱石', '『吾輩は猫である』、『坊っちゃん』、『こゝろ』','1867年2月9日 - 1916年12月9日', 'https://upload.wikimedia.org/wikipedia/commons/1/17/Natsume_Soseki_photo.jpg', 'https://ja.wikipedia.org/wiki/夏目漱石');
+INSERT INTO novelist VALUES (NULL, '小説家','太宰治', '『走れメロス』、『斜陽』、『人間失格』','1909年6月19日 - 1948年6月13日', 'https://upload.wikimedia.org/wikipedia/commons/7/77/Osamu_Dazai.jpg', 'https://ja.wikipedia.org/wiki/太宰治');
+INSERT INTO novelist VALUES (NULL, '小説家','夢野久作', '『ドグラ・マグラ』、『氷の涯』、『少女地獄』','1889年1月4日 - 1936年3月11日', 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Kyusaku_Yumeno.jpg', 'https://ja.wikipedia.org/wiki/夢野久作');
+INSERT INTO novelist VALUES (NULL, '小説家','芥川龍之介', '『羅生門』、『藪の中』、『歯車』','1892年3月1日 - 1927年7月24日', 'https://upload.wikimedia.org/wikipedia/commons/1/10/Akutagawa_Ryunosuke_photo2.jpg', 'https://ja.wikipedia.org/wiki/芥川龍之介');
+INSERT INTO novelist VALUES (NULL, '詩人、童話作家','宮沢賢治', '『銀河鉄道の夜』、『風の又三郎』、『セロ弾きのゴーシュ』','1896年8月27日 - 1933年9月21日', 'https://upload.wikimedia.org/wikipedia/commons/4/4d/Miyazawa_Kenji.jpg', 'https://ja.wikipedia.org/wiki/宮沢賢治');

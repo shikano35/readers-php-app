@@ -1,0 +1,84 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 2em;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input {
+    border: 1px solid #ccc;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+.login-button {
+    background-color: #556b2f;
+    color: #fff;
+}
+
+.login-button:hover {
+    background-color: #445a25;
+}
+
+.register-button {
+    background-color: #ffffff;
+    color: #556b2f;
+    border: 1px solid #556b2f;
+}
+
+.register-button:hover {
+    background-color: #e0e0e0;
+}
+
+.guest-button {
+    background-color: #b22222;
+    color: #fff;
+}
+
+.guest-button:hover {
+    background-color: #a00000;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+}

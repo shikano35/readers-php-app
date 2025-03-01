@@ -1,0 +1,368 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #556b2f;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.site-title {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+.login-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: white;
+    color: #556b2f;
+    border: 1px solid #556b2f;
+    border-radius: 4px;
+    transition: background-color 0.1s, color 0.1s, border-color 0.1s;
+}
+
+.login-btn:hover {
+    background-color: #556b2f;
+    color: white;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    padding: 8px;
+    border-radius: 15px 0 0 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-right: none;
+    width: 400px;
+}
+
+.search-button {
+    padding: 8px 16px;
+    background-color: #808080;
+    border: 1px solid #ccc;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.1s, color 0.1s, border-color 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    background-color: white;
+}
+
+.search-button img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0.7);
+    transition: filter 0.2s;
+}
+
+.search-button:hover img {
+    filter: brightness(1);
+}
+
+.search-button:hover {
+    background-color: #ccc;
+}
+
+main {
+    padding: 20px;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.book {
+    width: calc(31% - 20px);
+    margin: 10px auto;
+    padding: 10px 5px;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    color: #333;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+@media (max-width: 1199px) {
+    .book {
+        width: calc(45% - 20px);
+    }
+
+    .book-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .book {
+        width: calc(90% - 20px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .book-container {
+        justify-content: center;
+    }
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    background-color: #f0f0f0;
+}
+
+.book img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book h3 {
+    margin: 5px 0;
+    text-align: left;
+}
+
+.book p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.favorite-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ff0000;
+    transition: transform 0.2s;
+}
+
+.favorite-button:hover {
+    transform: scale(1.1);
+}
+
+.delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: 2px solid #808080;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: #808080;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.delete-button:hover {
+    transform: scale(1.1);
+    background-color: #606060;
+    color: white;
+}
+
+.edit-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: 0.5px solid #ddd;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.edit-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.edit-button:hover {
+    transform: scale(1.1);
+    background-color: #ccc;
+}
+
+.section-title {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #808080;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 8;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 9;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.15s;
+}
+
+.menu {
+    position: absolute;
+    top: 60px;
+    left: -325px;
+    width: 300px;
+    background-color: #444444;
+    transition: left 0.3s;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.menu.active {
+    left: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu ul li:last-child {
+    border-bottom: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: background-color 0.15s;
+}
+
+.menu ul li a:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-item {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.15s;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.novelist-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.novelist {
+    flex: 1 1 calc(33.333% - 10px);
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.refresh-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+    border: 1px solid #556b2f;
+    float: right;
+    margin-right: 20px;
+}
+
+.refresh-button img {
+    width: 18px;
+    height: 18px;
+}
+
+.refresh-button:hover {
+    background-color: #ccc;
+}
